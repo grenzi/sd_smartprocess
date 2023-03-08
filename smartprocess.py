@@ -83,6 +83,7 @@ def preprocess(rename,
                scaler
                ):
     try:
+        rename=False
         shared.sd_model.to("cpu")
         shared.state.textinfo = "Initializing smart processing..."
         safe.RestrictedUnpickler = reallysafe.RestrictedUnpickler
